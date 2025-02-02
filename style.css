@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple: #855FB1;
+    --light-grey: #87879D;
+    --dark-grey: #28283D;
+    --white: #FFFF;
+    --cyan: #4D96A9;
+    --light-cyan: #8FE3F9;
+    --off-white: #D1D1DF;
+
+
+    --btn-hover-1: #71C0D4;
+    --btn-hover-2: #B18BDD;
+
+}
+
+body{
+
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+/*--hero-section--*/
+
+#logo{
+    display: block;
+    margin: 2em auto;
+}
+
+.hero-bg{
+    background: url(meet-landing-page/starter-code/assets/tablet/image-hero.png) no-repeat center/cover;
+    height: 160px;
+    width: 100vw;
+    margin-bottom: 2.5em;
+}
+
+.desktop-bg{
+    display: none;
+}
+
+.hero-text{
+    margin: 0 0.6em;
+}
+
+.hero-text h1{
+    font-size: 2em;
+    font-weight: 800;
+    display: block;
+    line-height: 1.3;
+    padding: 1em 2em;
+    
+}
+
+.hero-text p{
+    color: var(--light-grey);
+    margin-bottom: 1.44em;
+}
+ /* --- hero-btns-- */
+.btns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", serif;
+     
+}
+
+.btn {
+    font-family: "Poppins", serif;
+    color: var(--white);
+    padding: 1em 1.5em;
+    border-radius: 28px;
+    font-size: 16px;
+}
+
+.btn-1{
+    background-color: var(--cyan);
+    border: 0 solid var(--cyan); 
+}
+
+.btn-1:hover{
+    background-color: var(--btn-hover-1);
+}
+.btn-2:hover {
+    background-color: var(--btn-hover-2);
+}
+
+.vrs-control{
+    color: var(--light-cyan);
+}
+
+.btn-2{
+    background-color: var(--purple);
+    border: 0 solid var(--purple);
+    margin-top: 0.75em;
+}
+
+
+.break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.6em ;
+}
+.vertical-line {
+    border-left: 1px solid var(--light-grey);
+    height: 85px;
+    margin: 0 0.7em;
+}
+
+.break-one #one{
+    border:1px solid var(--light-grey);
+    padding: 1em 1.3em;
+    border-radius: 50%;
+    color: var(--light-grey);
+    font-weight: 500;
+
+}
+
+/* --display-imgs--*/
+.display-imgs{
+    margin: 2em 0;
+}
+.display-imgs img{
+   width: 140px;
+   height: 125px;
+   border-radius: 10px;
+   display: block;
+    align-self: center;
+}
+
+.display-imgs .set-1 {
+    justify-self: end;
+}
+.display-imgs .set-2{
+    justify-self: start;
+}
+
+
+.dis-img-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+
+/* --- mission-section ---*/
+
+.mission{
+    margin: 1em;
+}
+
+.mission h2{
+    font-size: clamp( 0.8em, 0.9em, 1.1em);
+    color: var(--cyan);
+    font-weight: 600;
+    letter-spacing: 5px ;
+}
+
+.mission-description{
+    font-size: 1.9em;
+    font-weight: 800;
+    margin: 0.4em;
+}
+
+.mission-description + p{
+    color: var(--light-grey);
+}
+
+
+
+
+.break-two #two {
+    border: 1px solid var(--light-grey);
+    padding: 1em 1.2em;
+    border-radius: 50%;
+    color: var(--light-grey);
+    font-weight: 500;
+
+}
+
+/* -- footer --*/
+
+footer{
+    background: var(--cyan) url(meet-landing-page/starter-code/assets/mobile/image-footer.jpg) center/cover no-repeat;
+    height: 300px;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1em;
+    color: var(--white);
+}
+
+
+
+
