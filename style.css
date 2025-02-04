@@ -238,10 +238,15 @@ footer{
 
 
 /* --- tablet-break-point---*/
+@media (min-width: 521px) {
+    .hero-bg{
+        height: 30vh;
+    }
+}
 @media (min-width:768px) {
     .hero-bg{
         background: url(meet-landing-page/starter-code/assets/tablet/image-hero.png) no-repeat center/cover;
-        height: 30vh;
+        height: 35vh;
         width: 100vw;
         margin-bottom: 2.5em;
     }
@@ -270,11 +275,12 @@ footer{
     /*-- dispaly-section--*/
     
     .display-imgs{
-        margin: 2.2em 2em;
+        margin: 2.2em 2.3em;
     }
+
     .display-imgs img{
-        width: 160px;
-        height: 150px;
+        min-width: 160px;
+        min-height: 150px;
     }
     
     .display-imgs .set-1 {
@@ -328,6 +334,7 @@ footer{
         height: 0;
         background: none;
     }
+
     .desktop-bg{
         display: flex;
         justify-content: space-between;
@@ -370,8 +377,8 @@ footer{
     }
 
     .display-imgs img{
-        width: 227px;
-        height: 210px;
+        width: 100%;
+        height: 100%;
     }
 
     .display-imgs .set-1 {
@@ -415,7 +422,7 @@ footer{
     }
 
     .btn-3{
-        margin: 0 6em;
+        margin: 0 4em;
     }
 
 }
