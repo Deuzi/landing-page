@@ -26,6 +26,7 @@ body{
 
     font-family: "Poppins", serif;
     text-align: center;
+    background-color: var(--off-white);
 }
 
 /*--hero-section--*/
